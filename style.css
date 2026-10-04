@@ -1,0 +1,44 @@
+/* ===== Base ===== */
+:root {
+  --bg: #0f1115;
+  --surface: #171a21;
+  --surface-alt: #1e222b;
+  --text: #e7e9ee;
+  --text-muted: #9aa1ad;
+  --accent: #7dd3fc;
+  --accent-2: #a78bfa;
+  --border: #2a2f3a;
+  --radius: 10px;
+  --max-width: 860px;
+  --font-head: "Space Grotesk", sans-serif;
+  --font-body: "IBM Plex Sans", sans-serif;
+}
+ 
+* { box-sizing: border-box; }
+ 
+html { scroll-behavior: smooth; }
+ 
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+ 
+h1, h2, h3 {
+  font-family: var(--font-head);
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 0.5em;
+}
+ 
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+}
+
