@@ -33,3 +33,25 @@ const projects = [
     link: "https://github.com/trevorayunga",
   },
 ];
+
+// ===== Render skills =====
+function renderSkills() {
+  const list = document.getElementById("skills-list");
+  if (!list) return;
+ 
+  const fragment = document.createDocumentFragment();
+  skills.forEach((skill) => {
+    const li = document.createElement("li");
+    li.textContent = skill;
+    fragment.appendChild(li);
+  });
+  list.appendChild(fragment);
+}
+
+
+// ===== Init =====
+document.addEventListener("DOMContentLoaded", () => {
+  renderSkills();
+  renderProjects();
+});
+ 
