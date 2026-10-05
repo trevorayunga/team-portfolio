@@ -121,37 +121,30 @@ a:focus-visible {
   max-width: 60ch;
 }
 
-/* ===== About ===== */
-.about {
-  display: flex;
-  align-items: center;
-  gap: 32px;
+/* ===== Skills ===== */
+.skills-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+    display: flex;
   flex-wrap: wrap;
-  padding-top: 72px;
+  gap: 10px;
 }
  
-.avatar {
-  width: 128px;
-  height: 128px;
-  border-radius: 50%;
+  .skills-list li {
   background-color: var(--surface);
-  border: 2px solid var(--border);
-  flex-shrink: 0;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: transform 0.2s ease, border-color 0.2s ease;
 }
  
-.about-text {
-  flex: 1 1 320px;
-  min-width: 0;
-}
- 
-.about-text h1 {
-  font-size: 2rem;
-  margin-bottom: 0.3em;
-}
- 
-.about-text p {
-  color: var(--text-muted);
-  max-width: 60ch;
+.skills-list li:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
 }
 
 /* ===== Projects ===== */
@@ -221,3 +214,4 @@ a:focus-visible {
   font-size: 0.85rem;
   border-top: 1px solid var(--border);
 }
+
