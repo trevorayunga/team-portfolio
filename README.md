@@ -12,3 +12,5 @@ style.css — styling and layout
 script.js — populates the skills and projects sections
 Deployment
 
+live link 
+https://trevorayunga.github.io/team-portfolio/
